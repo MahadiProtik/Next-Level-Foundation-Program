@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .app{
+            background: #fff;
+            width: 400px;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px, rgba(0,0,0,0.1);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 2px;
+            color: #333;
+        }
+        .input-row{
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        #taskInput{
+            flex: 1;
+            padding: 10px;
+            border: 1 px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        #addBtn{
+            padding: 10px 16px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #addBtn:hover{
+            background-color: #43a047;
+        }
+        #taskList{
+            list-style: none;
+        }
+        .task-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .task-text{
+            flex: 1;
+            margin: 0 10px;
+        }
+        .competed{
+            text-decoration: line-through;
+            color: #999;
+        }
+        .task-buttons button{
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 6px;
+        }
+        .empty-state{
+            text-align: center;
+            color: #999;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>My ToDo App</h1>
+        <div class="input-row">
+            <input type="text" id="taskInput" placeholder="Enter a Task ...">
+            <button id="addBtn">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+
+    <!-- <script src="02-app.js"></script> -->
+    <script src="./06-todo.js"></script>
+</body>
+</html>
